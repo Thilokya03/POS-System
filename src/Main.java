@@ -121,8 +121,6 @@ public class Main {
                         Cashers newCasher = new Cashers(name ,password);
                         cashersMap.put(name , newCasher);
                         System.out.println("Cashier " + name + " registered successful !!!");
-                        System.out.println("Name : " + name + "     Password : " + password + '\n');
-
                         break;
 
                     case 2:
