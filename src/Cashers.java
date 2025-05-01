@@ -9,7 +9,6 @@ public class Cashers {
         this.name = name;
         this.password = password;
     }
-
     public boolean checkPassword(String password){
         return this.password.equalsIgnoreCase(password);
     }
