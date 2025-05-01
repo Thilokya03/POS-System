@@ -27,6 +27,7 @@ public class Main {
     public static void loadingProduct(String filePath){
         try (BufferedReader readFile = new BufferedReader(new FileReader(filePath))) {
             String line;
+
             while ((line = readFile.readLine()) != null) {
                 String[] Line = line.split(",");
                 if(Line.length != 7){
@@ -37,6 +38,9 @@ public class Main {
                 productList.put(Line[0] , product);
             }
             System.out.println("All products are Loaded !!!");
+
+
+
         } catch (IOException e) {
             System.out.println("Error reading file : " + e.getMessage());
         } catch (NumberFormatException e){
